@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:3000/todos";
-
+const API_URL = "https://todo-app-backend-gpuq.onrender.com/todos";
 let allTodos = [];
 let currentFilter = "all";
 
