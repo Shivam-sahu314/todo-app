@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Todo List</h1>
+
+        <div class="input-box">
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="Enter your task..."
+            >
+            <button onclick="addTodo()">Add</button>
+        </div>
+
+        <div class="stats">
+            <span>Total: <b id="totalCount">0</b></span>
+            <span>Pending: <b id="pendingCount">0</b></span>
+            <span>Completed: <b id="completedCount">0</b></span>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTodos('all')">All</button>
+            <button onclick="filterTodos('pending')">Pending</button>
+            <button onclick="filterTodos('completed')">Completed</button>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <p id="emptyMessage">No tasks found.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
